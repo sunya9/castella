@@ -1,0 +1,6 @@
+:root {
+  --default-accent-color: var(--accent-color, #dccb18);
+
+  --default-text-color: var(--text-color, #444);
+  --default-bg-color: var(--bg-color, #fefefe);
+}
