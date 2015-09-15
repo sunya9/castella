@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/sunya9/castella#readme",
   "devDependencies": {
+    "autoprefixer": "^6.0.2",
     "cssnext": "^1.8.4",
+    "csswring": "^4.0.0",
     "gulp": "^3.9.0",
     "gulp-livereload": "^3.8.0",
     "gulp-load-plugins": "^0.10.0",
