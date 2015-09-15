@@ -1,0 +1,19 @@
+{
+  "name": "castella",
+  "version": "1.0.0",
+  "description": "Castella is new CSS Framework.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sunya9/castella.git"
+  },
+  "keywords": [],
+  "author": "sunya9",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sunya9/castella/issues"
+  },
+  "homepage": "https://github.com/sunya9/castella#readme"
+}
