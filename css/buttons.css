@@ -1,0 +1,18 @@
+button, .button{
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: .3rem .8rem;
+  border: 1px solid var(--default-accent-color);
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background: transparent none;
+  border-radius : 1px;
+  text-decoration: none;
+  color: var(--default-accent-color);
+  outline: none;
+  &:hover{
+    background-color: var(--default-accent-color);
+    color: #fff;
+  }
+}
