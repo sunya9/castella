@@ -1,0 +1,10 @@
+@import "normalize.css/normalize.css";
+@import "variables.css";
+@import "utils.css";
+@import "grid.css";
+@import "buttons.css";
+
+body{
+  color: var(--default-text-color);
+  background-color: var(--default-bg-color);
+}
