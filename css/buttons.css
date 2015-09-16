@@ -1,7 +1,7 @@
 button, .button{
   display: inline-block;
   margin-bottom: 1rem;
-  padding: .3rem .8rem;
+  padding: .3em .8em;
   border: 1px solid var(--default-accent-color);
   text-align: center;
   vertical-align: middle;
@@ -15,4 +15,19 @@ button, .button{
     background-color: var(--default-accent-color);
     color: #fff;
   }
+  &.large{
+    font-size: 1.2rem;
+  }
+  &.small{
+    font-size: .8rem;
+  }
+}
+
+button[disabled], .button.disabled{
+  pointer-events: none;
+  opacity: .7;
+}
+
+button[disabled]{
+  cursor: not-allowed;
 }
