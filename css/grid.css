@@ -1,3 +1,39 @@
+.container{
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.container-fluid{
+  width: 100%;
+}
+
 .row{
-  @extend .clearfix;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 auto;
+  max-width: var(--default-row-max-width);
+  .row{
+    margin: 0 -var(--default-column-gutter);
+  }
+}
+
+@define-mixin columns $class{
+  @for $i from 1 to 12{
+    .$(class)$(i){
+      width: calc(100% / var(--default-column-count) * $i - var(--default-column-gutter) * 2);
+      padding: 0 var(--default-column-gutter);
+    }
+  }
+}
+
+@media (--small){
+  @mixin columns s;
+}
+
+@media (--medium){
+  @mixin columns m;
+}
+
+@media (--large){
+  @mixin columns l;
 }
