@@ -3,4 +3,13 @@
 
   --default-text-color: var(--text-color, #444);
   --default-bg-color: var(--bg-color, #fefefe);
+
+  --default-row-max-width: var(--row-max-width, 70rem);
+  --default-column-count: var(--column-count, 12);
+  --default-column-gutter: var(--column-gutter, 1rem);
+
 }
+
+@custom-media --small;
+@custom-media --medium (width >= 50rem);
+@custom-media --large (width >= 70rem);
