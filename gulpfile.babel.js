@@ -2,7 +2,10 @@ import path from 'path';
 import mixins from 'postcss-mixins';
 import nested from 'postcss-nested';
 import extend from 'postcss-extend';
-
+import repeat from 'postcss-for';
+import simpleVars from 'postcss-simple-vars';
+import each from 'postcss-each';
+import cssMqpacker from 'css-mqpacker';
 import gulp from 'gulp';
 import gulpLoadPlugins from 'gulp-load-plugins';
 
@@ -20,9 +23,13 @@ gulp.task('css', () => {
     .pipe($.cssnext({
       compress: process.env.NODE_ENV === 'production',
       plugins: [
-        nested,
         mixins,
+        nested,
         extend,
+        each,
+        repeat,
+        simpleVars,
+        cssMqpacker,
       ]
     }))
     .pipe(gulp.dest(CSS_DIST_DIR))
