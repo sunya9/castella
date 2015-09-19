@@ -1,0 +1,28 @@
+.header{
+  margin: 0 auto 2rem;
+  padding: 2rem 1rem;
+  box-shadow: inset 0 2px 1px #000;
+  &.stripe{
+    background-color: var(--default-stripe-color);
+    background-image: repeating-linear-gradient(45deg, transparent, transparent var(--default-stripe-pitch), rgba(255,255,255,.5) var(--default-stripe-pitch), rgba(255,255,255,.5) calc(var(--default-stripe-pitch) * 2));
+    &.dark{
+      background-image: repeating-linear-gradient(45deg, transparent, transparent var(--default-stripe-pitch), rgba(30,30,30,.5) var(--default-stripe-pitch), rgba(30,30,30,.5) calc(var(--default-stripe-pitch) * 2));
+      color: #fff;
+    }
+  }
+  @media (--small){
+    
+  }
+  @media (--medium){
+    padding: 2.5rem 0 4.5rem;
+  }
+  @media (--large){
+    .title{
+      font-size: 3rem;
+      margin-top: 1rem;
+    }
+    .desc{
+      font-size: 1.1rem;
+    }
+  }
+}
