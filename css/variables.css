@@ -11,6 +11,11 @@
   --default-font-size: var(--font-size, 1rem);
   --default-font-family: var(--font-family, "Avenir Next", "Segoe UI", Verdana, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック", "Yu Gothic", "メイリオ", Meiryo, sans-serif);
   --default-divider-color: var(--divider-color, #ccc);
+
+  --default-stripe-color: var(--stripe-color, #2c3e50);
+  --default-stripe-pitch: var(--stripe-pitch, 30px);
+  
+  --default-global-nav-vertical-padding: var(--global-nav-vertical-padding, 1rem);
 }
 
 @custom-media --small;
