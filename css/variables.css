@@ -16,6 +16,8 @@
   --default-stripe-pitch: var(--stripe-pitch, 30px);
   
   --default-global-nav-vertical-padding: var(--global-nav-vertical-padding, 1rem);
+
+  --default-side-nav-vertical-padding: var(--global-nav-vertical-padding, .2rem);
 }
 
 @custom-media --small;
