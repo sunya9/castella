@@ -6,6 +6,8 @@
 @import "buttons.css";
 @import "typography.css";
 @import "forms.css";
+@import "header.css";
+@import "global-nav.css";
 
 html{
   font-size: var(--default-font-size);
