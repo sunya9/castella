@@ -1,5 +1,5 @@
 :root {
-  --default-accent-color: var(--accent-color, #dccb18);
+  --default-accent-color: var(--accent-color, #1abe9e);
 
   --default-text-color: var(--text-color, #444);
   --default-bg-color: var(--bg-color, #fefefe);
@@ -8,6 +8,9 @@
   --default-column-count: var(--column-count, 12);
   --default-column-gutter: var(--column-gutter, 1rem);
 
+  --default-font-size: var(--font-size, 1rem);
+  --default-font-family: var(--font-family, "Avenir Next", "Segoe UI", Verdana, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック", "Yu Gothic", "メイリオ", Meiryo, sans-serif);
+  --default-divider-color: var(--divider-color, #ccc);
 }
 
 @custom-media --small;
