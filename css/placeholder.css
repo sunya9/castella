@@ -1,5 +1,5 @@
 %button{
-  transition: all .2 ease;
+  transition: all .2s ease;
   display: inline-block;
   margin-bottom: 1rem;
   padding: .3rem .8rem;
@@ -18,7 +18,7 @@
   &:hover{
     background-color: var(--default-accent-color);
     color: #fff;
-    text-shadow: 0px 1px 1px color(#000 a(30%));
+    text-shadow: 0 1px 1px color(#000 a(30%));
     &:active{
       background-color: color(var(--default-accent-color) b(50%));
       border-color: color(var(--default-accent-color) b(50%));
