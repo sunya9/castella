@@ -1,10 +1,19 @@
 @import "normalize.css/normalize.css";
+@import "placeholder.css";
 @import "variables.css";
 @import "utils.css";
 @import "grid.css";
 @import "buttons.css";
+@import "typography.css";
+@import "forms.css";
+
+html{
+  font-size: var(--default-font-size);
+}
 
 body{
   color: var(--default-text-color);
   background-color: var(--default-bg-color);
+  font-family: var(--default-font-family);
+  line-height: 1.6;
 }
