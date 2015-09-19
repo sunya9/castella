@@ -48,7 +48,7 @@
             border-top-color: var(--default-accent-color);
             position: absolute;
             right: 0;
-            top: calc(50% - .05rem);
+            top: 50%;
           }
         }
         > ul{
