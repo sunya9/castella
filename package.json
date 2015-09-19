@@ -31,6 +31,7 @@
     "postcss-for": "^2.0.0",
     "postcss-mixins": "^1.0.0",
     "postcss-nested": "^1.0.0",
+    "postcss-sass-extend": "0.0.1",
     "postcss-simple-vars": "^1.0.1"
   },
   "dependencies": {}
