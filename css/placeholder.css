@@ -1,13 +1,15 @@
 %button{
+  box-sizing: content-box;
   transition: all .2s ease;
   display: inline-block;
   margin-bottom: 1rem;
-  padding: .3rem .8rem;
+  padding: 6px .8rem;
   border: 1px solid var(--default-accent-color);
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
   background: transparent none;
+  line-height: 1.5;
   border-radius : 1px;
   text-decoration: none;
   color: var(--default-accent-color);
@@ -26,6 +28,9 @@
       border-top-width: 3px;
       border-bottom-width: 1px;
     }
+  }
+  &:focus{
+    background-color: color(var(--default-accent-color) a(30%) l(+10%));
   }
   &.large{
     font-size: 1.5rem;
