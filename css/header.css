@@ -14,7 +14,7 @@
     
   }
   @media (--medium){
-    padding: 2.5rem 0 4.5rem;
+    padding: 2.5rem 0 4rem;
   }
   @media (--large){
     .title{
