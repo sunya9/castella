@@ -1,4 +1,9 @@
 .global-nav{
+  @extend .row;
+  display: flex;
+  max-width: var(--default-row-max-width);
+  padding: 0 var(--default-column-gutter);
+  margin: 0 auto;
   &.sticky{
     position: fixed;
     width: 100%;
@@ -14,27 +19,61 @@
     background-color: transparent;
     box-shadow: none;
   }
-  ul{
-    @extend .row;
-    display: flex;
-    /*flex-flow: row wrap;*/
-    max-width: var(--default-row-max-width);
-    padding: 0;
-    margin: 0 auto;
-    list-style-type: none;
-    align-items: center;
-    li{
-      display: block;
-      margin: 0;
-      padding: 0 var(--default-column-gutter);
-      vertical-align: middle;
-      &.logo{
-        /*margin-right: auto;*/
-        font-size: 1.5rem;
-        font-weight: bold;
+  .primary{
+    
+  }
+  .nav-left, .nav-right{
+    margin: auto 0;
+    @media (--small){
+      display: none;
+      &.primary{
+        display: block;
       }
-      &.nav-right{
-        margin-left: auto;
+    }
+    @media (--small){
+      display: none;
+    }
+    @media (--medium){
+      display: inline-block;
+    }
+  }
+  .nav-right{
+    @media (--medium){
+      margin-left: auto;
+    }
+  }
+  form{
+    display: inline-block;
+  }
+  .button, button, input{
+    margin: 0;
+  }
+  .logo{
+    font-weight: bold;
+    font-size: 1.2rem;
+    width: 100%;
+    @media  (--medium){
+      font-size: 1.5rem;
+      width: auto;
+    }
+    a{
+      @media (--medium){
+        padding-bottom:  var(--default-global-nav-vertical-padding);
+      }
+    }
+  }
+  ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    li{
+      display: inline-block;
+      margin: 0;
+      vertical-align: middle;
+      padding: 0;
+      @media (--medium){
+        margin: 0 calc(var(--default-column-gutter) / 2);
       }
       &.dropdown{
         a{
@@ -47,7 +86,7 @@
             border: .3rem solid transparent;
             border-top-color: var(--default-accent-color);
             position: absolute;
-            right: 0;
+            right: .25rem;
             top: 50%;
           }
         }
@@ -59,7 +98,10 @@
         display: block;
         text-decoration: none;
         color: var(--default-accent-color);
-        padding: var(--default-global-nav-vertical-padding) .5rem;
+        padding: var(--default-global-nav-vertical-padding) calc(var(--default-column-gutter) * .5);
+        @media (--medium){
+          padding: var(--default-global-nav-vertical-padding) .5rem;
+        }
         &.dark{
           color: #fff;
         }
