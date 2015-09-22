@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Example file</title>
+  <link rel="stylesheet" href="./dist/css/castella.css">
+  <script src="./dist/js/castella.js"></script>
+</head>
+<body>
+  <nav class="global-nav justify">
+      <ul class="nav-left primary">
+        <li class="logo"><a href="./">Castella</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <form action="./" class="row">
+          <input type="text" class="search" placeholder="search">
+          <button class="postfix">Submit</button>
+        </form>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Docs</a></li>
+          <li><a href="#">Contact</a></li>
+          <li class="dropdown">
+            <a href="#">Other</a>
+            <ul>
+              <li>Item1</li>
+              <li>Item2</li>
+              <li>Item3</li>
+              <li>Item4</li>
+              <li>Item5</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+  </nav>
+  <header class="header stripe dark">
+    <div class="row">
+      <div class="column s12">
+        <h1 class="title">Castella</h1>
+        <p class="desc">Castella is new CSS framework.</p>
+      </div>
+    </div>
+    </div>
+  </header>
+  <div class="container">
+    <div class="row">
+      <div class="s12 m8">
+        <main>
+          <h1>What is Castella?</h1>
+          <p>Castella is new CSS framework that has used many CSS3 properies and selector.</p>
+          <h2>Features</h2>
+          <div class="row text-center">
+            <div class="l4 s12">
+              <h3>Simple</h3>
+              <p></p>
+            </div>
+            <div class="l4 s12">
+              <h3>Lightweight</h3>
+            </div>
+            <div class="l4 s12">
+              <h3>Flexible</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column s6">s1 m1 l6
+              <div class="row">
+                <div class="column s12">inner column</div>
+                <div class="column s4">1</div>
+                <div class="column s4">2</div>
+                <div class="column s4">3</div>
+              </div>
+            </div>
+            <div class="column s6">s11 m11 l6</div>
+          </div>
+          <div class="row">
+            <div class="column s2">s2</div>
+            <div class="column s2">s2</div>
+            <div class="column s2">s2</div>
+            <div class="column s2">s2</div>
+            <div class="column s2">s2</div>
+            <div class="column s2">s2</div>
+          </div>
+          <div class="row">
+            <div class="column s3">s3</div>
+            <div class="column s3">s3</div>
+            <div class="column s3">s3</div>
+            <div class="column s3">s3</div>
+          </div>
+          <div class="row">
+            <div class="column s4">s4</div>
+            <div class="column s4">s4</div>
+            <div class="column s4">s4</div>
+          </div>
+          <div class="row">
+            <div class="column s6">s6</div>
+            <div class="column s6">s6</div>
+          </div>
+          <div class="row">
+            <div class="column s7">s7</div>
+            <div class="column s5">s5</div>
+          </div>
+          <div class="row">
+            <div class="column s8">s8</div>
+            <div class="column s4">s4</div>
+          </div>
+          <div class="row">
+            <div class="column s9">s9</div>
+            <div class="column s3">s3</div>
+          </div>
+          <div class="row">
+            <div class="column s10">s10</div>
+            <div class="column s2">s2</div>
+          </div>
+          <div class="row">
+            <div class="column s11">
+              <form>
+                <div class="row">
+                  <div class="column s2">
+                    <label for="text">text</label>
+                  </div>
+                  <div class="column s10">
+                    <input type="text" name="text" id="text">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="column s2">
+                    <label for="text2">日本語</label>
+                  </div>
+                  <div class="column s10">
+                    <input type="text" name="text2" id="text2">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="column s2">
+                    <label>チェックボックス</label>
+                  </div>
+                  <div class="column s10">
+                      <label><input type="checkbox" name="" id="">チェック1</label>
+                      <label><input type="checkbox" name="" id="">チェック2</label>
+                      <label><input type="checkbox" name="" id="">チェック3</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="column s2">
+                    <label>ラジオボタン</label>
+                  </div>
+                  <div class="column s10">
+                    <label><input type="radio" name="radio" id="">ラジオ1</label>
+                    <label><input type="radio" name="radio" id="">ラジオ2</label>
+                    <label><input type="radio" name="radio" id="">ラジオ3</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="column s2">
+                    <label for="textarea">テキストエリア</label>
+                  </div>
+                  <div class="column s10">
+                    <textarea name="" id="textarea" cols="30" rows="10"></textarea>
+                    <input type="submit" value="submit" />
+                    <button class="large">Large button</button>
+                    <input type="button" value="Small button" class="small">
+                  </div>
+                </div>
+                <input type="range" name="" id="">
+                <input type="file" name="" id="">
+              </form>
+            </div>
+            <div class="column s1">s1</div>
+          </div>
+          <div class="row">
+            <div class="columns s6">
+              <h1>Heading1</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore ab neque error dolor laudantium! Tenetur hic doloremque esse facere autem repudiandae est eveniet quas inventore illum. Dolores impedit, maiores. Saepe?</p>
+              <h2>Heading2</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore ab neque error dolor laudantium! Tenetur hic doloremque esse facere autem repudiandae est eveniet quas inventore illum. Dolores impedit, maiores. Saepe?</p>
+              <h3>Heading3</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore ab neque error dolor laudantium! Tenetur hic doloremque esse facere autem repudiandae est eveniet quas inventore illum. Dolores impedit, maiores. Saepe?</p>
+              <h4>Heading4</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore ab neque error dolor laudantium! Tenetur hic doloremque esse facere autem repudiandae est eveniet quas inventore illum. Dolores impedit, maiores. Saepe?</p>
+              <h5>Heading5</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore ab neque error dolor laudantium! Tenetur hic doloremque esse facere autem repudiandae est eveniet quas inventore illum. Dolores impedit, maiores. Saepe?</p>
+              <h6>Heading6</h6>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore ab neque error dolor laudantium! Tenetur hic doloremque esse facere autem repudiandae est eveniet quas inventore illum. Dolores impedit, maiores. Saepe?</p>
+              
+            </div>
+            <div class="columns s6">
+              <h1>見出し1</h1>
+              <p>日本語のテキスト</p>
+              <h2>見出し2</h2>
+              <p>日本語のテキスト</p>
+              <h3>見出し3</h3>
+              <p>日本語のテキスト</p>
+              <h4>見出し4</h4>
+              <p>日本語のテキスト</p>
+              <h5>見出し5</h5>
+              <p>日本語のテキスト</p>
+              <h6>見出し6</h6>
+              <p>日本語のテキスト</p>
+            </div>
+          </div>
+        </main>
+      </div>
+      <div class="s12 m4">
+        <h2>Menu</h2>
+        <ul class="side-nav">
+          <li><a href="" class="active">What is Castella?</a></li>
+          <li><a href="">Item2</a></li>
+          <li><a href="">Item3</a></li>
+          <li><a href="">Item4</a></li>
+          <li>
+            <a href="">Item5</a>
+            <ul>
+              <li><a href="">Sub Item5-1</a></li>
+              <li><a href="">Sub Item5-2</a></li>
+              <li>
+                <a href="">Sub Item5-3</a>
+                <ul>
+                  <li><a href="">Sub sub Item5-3-1</a></li>
+                  <li><a href="">Sub sub Item5-3-2</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="">Item6</a></li>
+          <li><a href="">Item7</a></li>
+          <li><a href="">Item8</a></li>
+          <li><a href="">Item9</a></li>
+          <li><a href="">Item10</a></li>
+        </ul>
+      </div>
+      
+    </div>
+  </div>
+</body>
+</html>
