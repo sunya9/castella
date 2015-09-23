@@ -4,6 +4,7 @@ import nested from 'postcss-nested';
 import extend from 'postcss-sass-extend';
 import repeat from 'postcss-for';
 import simpleVars from 'postcss-simple-vars'
+import each from 'postcss-each'
 import cssMqpacker from 'css-mqpacker';
 import gulp from 'gulp';
 import gulpLoadPlugins from 'gulp-load-plugins';
@@ -22,6 +23,7 @@ gulp.task('css', () => {
     .pipe($.cssnext({
       compress: process.env.NODE_ENV === 'production',
       plugins: [
+        each,
         mixins,
         extend,
         nested,
