@@ -1,5 +1,4 @@
 input, label{
-  display: inline-block;
   line-height: 1.5;
   vertical-align: middle;
   outline: none;
@@ -8,7 +7,10 @@ input, label{
   }
 }
 
-input[type="text"], textarea{
+:--text-input, select{
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
   padding: 7px 4px;
   outline: none;
   border-radius: 1px;
@@ -16,9 +18,14 @@ input[type="text"], textarea{
   border: 1px solid #ddd;
   box-shadow: inset 0 1px 1px 0 #efefef;
   margin-bottom: 1rem;
+  min-height: 1.5rem;
   &:focus{
     border-color: var(--default-accent-color);
     box-shadow: inset 0 1px 2px 1px #eaeaea;
+  }
+  &.inline{
+    display: inline-block;
+    width: auto;
   }
 }
 input[type="text"]{
@@ -33,7 +40,6 @@ label{
   &[for]{
     cursor: pointer;
   }
-  /*padding: 2px 0;*/
 }
 
 button, input[type="submit"], input[type="reset"], input[type="button"]{
@@ -59,9 +65,16 @@ input[type="radio"], input[type="checkbox"]{
   }
 }
 
+select{
+  position: relative;
+  padding-right: 1rem;
+  min-height: 2.5rem;
+}
+
 .help-text{
   color: var(--default-secondary-text-color);
   margin-bottom: 1rem;
+  font-size: .9rem;
   :--text-input + &{
     margin-top: -.5rem;
   }
