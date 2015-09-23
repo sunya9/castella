@@ -2,6 +2,8 @@
 @import "placeholder.css";
 @import "variables.css";
 @import "utils.css";
+@import "lists.css";
+@import "table.css";
 @import "grid.css";
 @import "buttons.css";
 @import "typography.css";
@@ -9,7 +11,7 @@
 @import "header.css";
 @import "global-nav.css";
 @import "side-nav.css";
-@import "table.css";
+@import "pagination.css";
 
 html{
   font-size: var(--default-font-size);
