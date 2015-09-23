@@ -4,16 +4,21 @@ table{
   &.full{
     width: 100%;
   }
-  thead{
-    border-bottom: 3px double var(--default-divider-color);
-  }
-  th{
-    text-align: left;
-  }
   &.stripe{
     tr:nth-of-type(even){
       background-color: #ccc8;
     }
+  }
+  thead{
+    border-bottom: 3px double var(--default-divider-color);
+  }
+  tr{
+    &:hover{
+      background-color: #eee8 !important;
+    }
+  }
+  th{
+    text-align: left;
   }
   td, th{
     padding: .4rem .5rem;
