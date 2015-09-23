@@ -9,6 +9,7 @@
 @import "header.css";
 @import "global-nav.css";
 @import "side-nav.css";
+@import "table.css";
 
 html{
   font-size: var(--default-font-size);

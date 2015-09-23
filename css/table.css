@@ -1,0 +1,17 @@
+table{
+  border: 1px solid var(--default-divider-color);
+  margin: 1rem 0;
+  &.full{
+    width: 100%;
+  }
+  thead{
+    border-bottom: 3px double var(--default-divider-color);
+  }
+  td, th{
+    padding: .3rem .5rem;
+    border: 1px solid var(--default-divider-color);
+  }
+  tfoot{
+    border-top: 3px double var(--default-divider-color);
+  }
+}
