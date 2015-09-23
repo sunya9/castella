@@ -10,3 +10,9 @@ p{
 .lead{
   font-size: 1.2rem;
 }
+:--any-link{
+  text-decoration: none;
+  &:hover{
+    text-decoration: underline;
+  }
+}
