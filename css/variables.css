@@ -26,3 +26,4 @@
 @custom-media --large (width >= 70rem);
 
 @custom-selector :--text-input input[type="text"], textarea;
+@custom-selector :--form-control input, textarea, select, button;
