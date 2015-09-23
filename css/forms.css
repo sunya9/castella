@@ -58,3 +58,11 @@ input[type="radio"], input[type="checkbox"]{
     
   }
 }
+
+.help-text{
+  color: var(--default-secondary-text-color);
+  margin-bottom: 1rem;
+  :--text-input + &{
+    margin-top: -.5rem;
+  }
+}
