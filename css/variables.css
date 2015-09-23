@@ -3,6 +3,7 @@
 
   --default-text-color: var(--text-color, #444);
   --default-bg-color: var(--bg-color, #fefefe);
+  --default-secondary-text-color: var(--secondary-text-color, #777);
 
   --default-row-max-width: var(--row-max-width, 70rem);
   --default-column-count: var(--column-count, 12);
@@ -23,3 +24,5 @@
 @custom-media --small;
 @custom-media --medium (width >= 40rem);
 @custom-media --large (width >= 70rem);
+
+@custom-selector :--text-input input[type="text"], textarea;
