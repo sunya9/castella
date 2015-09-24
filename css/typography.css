@@ -16,7 +16,12 @@ p{
 }
 :--any-link{
   text-decoration: none;
+  color: var(--default-accent-color);
   &:hover{
     text-decoration: underline;
+    color: color(var(--default-accent-color) l(+15%));
+    &:active{
+      color: color(var(--default-accent-color) l(-5%));
+    }
   }
 }
