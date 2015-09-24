@@ -28,3 +28,11 @@ table{
     border-top: 3px double var(--default-divider-color);
   }
 }
+.responsive-table{
+  max-width: 100%;
+  overflow: auto;
+  margin: 1rem 0;
+  table{
+    margin: 0;
+  }
+}
