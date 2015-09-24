@@ -1,5 +1,5 @@
 .global-nav{
-  @extend .row;
+  /*@extend .row;*/
   display: flex;
   max-width: var(--default-row-max-width);
   padding: 0 var(--default-column-gutter);
