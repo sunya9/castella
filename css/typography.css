@@ -2,6 +2,10 @@
   h$(i){
     font-size: calc(2.2rem - 0.2rem * $(i));
     margin: 0.3rem 0 .6rem;
+    .small, small{
+      font-size: .8em;
+      color: var(--default-secondary-text-color);
+    }
   }
 }
 p{
