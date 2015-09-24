@@ -12,6 +12,7 @@
 @import "global-nav.css";
 @import "side-nav.css";
 @import "pagination.css";
+@import "quotes.css";
 
 html{
   font-size: var(--default-font-size);
@@ -22,14 +23,4 @@ body{
   background-color: var(--default-bg-color);
   font-family: var(--default-font-family);
   line-height: 1.6;
-}
-
-a{
-  color: var(--default-accent-color);
-  &:hover{
-    color: color(var(--default-accent-color) l(+15%));
-    &:active{
-      color: color(var(--default-accent-color) l(-5%));
-    }
-  }
 }
