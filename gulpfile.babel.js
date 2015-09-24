@@ -2,6 +2,7 @@ import path from 'path';
 import mixins from 'postcss-mixins';
 import nested from 'postcss-nested';
 import extend from 'postcss-sass-extend';
+import extend2 from 'postcss-extend';
 import repeat from 'postcss-for';
 import simpleVars from 'postcss-simple-vars'
 import each from 'postcss-each'
@@ -25,6 +26,7 @@ gulp.task('css', () => {
       plugins: [
         each,
         mixins,
+        extend2,
         extend,
         nested,
         repeat,
