@@ -47,8 +47,18 @@
     <div class="row">
       <div class="s12 m8">
         <main>
-          <h1>What is Castella?</h1>
+          <h1>What is Castella? <small>カステラとは？</small></h1>
           <p>Castella is new CSS framework that has used many CSS3 properies and selector.</p>
+          <blockquote>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, blanditiis fugiat exercitationem cupiditate illum suscipit quaerat voluptate commodi delectus nemo voluptatum culpa, porro qui rem vitae, nostrum officia enim dolorum.</p>
+            <cite>Lorem ipsum</cite>
+          </blockquote>
+          <dl>
+            <dt>Lorem Ipsum</dt>
+            <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit harum autem quidem vitae tempore eos labore, repudiandae, dolor voluptatem atque cum qui voluptates iusto nulla iste quisquam. Sint, ea, distinctio?</dd>
+            <dt>Lorem Ipsum</dt>
+            <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit harum autem quidem vitae tempore eos labore, repudiandae, dolor voluptatem atque cum qui voluptates iusto nulla iste quisquam. Sint, ea, distinctio?</dd>
+          </dl>
           <h2>Features</h2>
           <div class="row text-center">
             <div class="l4 s12">
@@ -63,39 +73,41 @@
             </div>
           </div>
           <h2>Table</h2>
-          <table class="full stripe">
-            <thead>
-              <tr>
-                <th>Column1</th>
-                <th>Column2</th>
-                <th>Column3</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Item</td>
-                <td>Item</td>
-                <td>Item</td>
-              </tr>
-              <tr>
-                <td>Item</td>
-                <td>Item</td>
-                <td>Item</td>
-              </tr>
-              <tr>
-                <td>Item</td>
-                <td>Item</td>
-                <td>Item</td>
-              </tr>
-              <tfoot>
+          <div class="responsive-table">
+            <table class="full stripe">
+              <thead>
                 <tr>
-                  <td>footer1</td>
-                  <td>footer2</td>
-                  <td>footer3</td>
+                  <th>Column1</th>
+                  <th>Column2</th>
+                  <th>Column3</th>
                 </tr>
-              </tfoot>
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                </tr>
+                <tr>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                </tr>
+                <tr>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                </tr>
+                <tfoot>
+                  <tr>
+                    <td>footer1</td>
+                    <td>footer2</td>
+                    <td>footer3</td>
+                  </tr>
+                </tfoot>
+              </tbody>
+            </table>
+          </div>
           <div class="row">
             <div class="s12 m4">
               <ul>
@@ -138,12 +150,12 @@
               </ul>
             </div>
           </div>
-          <ul class="pagination">
-            <li><a href="">Prev</a></li>
+          <ul class="pagination-centered">
+            <li class="disabled"><a href="">Prev</a></li>
             <li class="current"><a href="">1</a></li>
             <li><a href="">2</a></li>
             <li><a href="">3</a></li>
-            <li>…</li>
+            <li class="disabled"><a href="">…</a></li>
             <li><a href="">10</a></li>
             <li><a href="">Next</a></li>
           </ul>
@@ -209,7 +221,7 @@
                     <input type="text" name="text" id="text">
                   </div>
                 </div>
-                <div class="row">
+                <div class="row collapse">
                   <div class="column s2">
                     <label for="text2">日本語</label>
                   </div>
