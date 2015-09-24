@@ -25,3 +25,12 @@ p{
     }
   }
 }
+dl{
+  margin: 0 0 1rem;
+  dt{
+    font-weight: bold;
+  }
+  dd{
+    margin: 0 0 .5rem;
+  }
+}
