@@ -1,6 +1,10 @@
 
 .button{
   @extend %button;
+  a&:hover{
+    text-decoration: none;
+    color: #fff;
+  }
 }
 
 button[disabled], .button.disabled{
