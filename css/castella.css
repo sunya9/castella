@@ -1,12 +1,15 @@
+/* Initialize styles */
 @import "normalize.css/normalize.css";
-@import "placeholder.css";
+
 @import "variables.css";
+@import "placeholder.css";
+@import "typography.css";
 @import "lists.css";
 @import "table.css";
+@import "forms.css";
+
 @import "grid.css";
 @import "buttons.css";
-@import "typography.css";
-@import "forms.css";
 @import "header.css";
 @import "global-nav.css";
 @import "side-nav.css";
