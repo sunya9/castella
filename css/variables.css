@@ -19,6 +19,10 @@
   --default-global-nav-vertical-padding: var(--global-nav-vertical-padding, 1rem);
 
   --default-side-nav-vertical-padding: var(--global-nav-vertical-padding, .2rem);
+
+  --default-label-bg-color: var(--label-bg-color, #666);
+
+  --default-radius-length: var(--radius-length, 3px);
 }
 
 @custom-media --small;

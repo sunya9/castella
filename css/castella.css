@@ -1,7 +1,6 @@
 @import "normalize.css/normalize.css";
 @import "placeholder.css";
 @import "variables.css";
-@import "utils.css";
 @import "lists.css";
 @import "table.css";
 @import "grid.css";
@@ -14,6 +13,8 @@
 @import "pagination.css";
 @import "quotes.css";
 @import "breadcrumbs.css";
+@import "labels.css";
+@import "utils.css";
 
 html{
   font-size: var(--default-font-size);

@@ -18,3 +18,9 @@
 .text-justify{
   text-align: justify;
 }
+.radius{
+  border-radius: var(--default-radius-length);
+}
+.round{
+  border-radius: 1000px;
+}
