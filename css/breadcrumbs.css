@@ -1,0 +1,20 @@
+.breadcrumb{
+  list-style-type: none;
+  margin: 0 0 1rem;
+  li{
+    display: inline-block;
+    position: relative;
+    &.active{
+      color: var(--default-secondary-text-color);
+      font-weight: bold;
+    }
+    + li{
+      &:before{
+      content: ' / ';
+      font-weight: normal;
+      margin: 0 .5rem;
+      color: var(--default-secondary-text-color);
+    }
+    }
+  }
+}

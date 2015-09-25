@@ -13,6 +13,7 @@
 @import "side-nav.css";
 @import "pagination.css";
 @import "quotes.css";
+@import "breadcrumbs.css";
 
 html{
   font-size: var(--default-font-size);
