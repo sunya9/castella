@@ -18,6 +18,7 @@
 @import "breadcrumbs.css";
 @import "labels.css";
 @import "utils.css";
+@import "button-groups.css"
 
 html{
   font-size: var(--default-font-size);
