@@ -29,7 +29,7 @@
       border-left: none
     }
     > :--button{
-      
+      margin: 0;
     }
   }
 }
