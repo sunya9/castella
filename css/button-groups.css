@@ -2,6 +2,27 @@
   @extend .clearfix;
   list-style-type: none;
   margin: 0 0 1rem;
+  border-radius: 0;
+  &.radius{
+    > li{
+      &:first-child :--button{
+          border-radius: var(--default-radius-length) 0 0 var(--default-radius-length);
+      }
+      &:last-child :--button{
+        border-radius: 0 var(--default-radius-length) var(--default-radius-length) 0;
+      }
+    }
+  }
+  &.round{
+    > li{
+      &:first-child :--button{
+          border-radius: var(--default-round-length) 0 0 var(--default-round-length);
+      }
+      &:last-child :--button{
+        border-radius: 0 var(--default-round-length) var(--default-round-length) 0;
+      }
+    }
+  }
   > li{
     float: left;
     + li > :--button{
