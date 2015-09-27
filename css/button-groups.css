@@ -1,3 +1,14 @@
 .button-group{
-  
+  @extend .clearfix;
+  list-style-type: none;
+  margin: 0 0 1rem;
+  > li{
+    float: left;
+    + li > :--button{
+      border-left: none
+    }
+    > :--button{
+      
+    }
+  }
 }
