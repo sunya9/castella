@@ -10,6 +10,7 @@
   --default-column-gutter: var(--column-gutter, 1rem);
 
   --default-font-size: var(--font-size, 1rem);
+  --default-large-font-size: var(--large-font-size, 1.5rem);
   --default-font-family: var(--font-family, "Avenir Next", "Segoe UI", Verdana, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック", "Yu Gothic", "メイリオ", Meiryo, sans-serif);
   --default-divider-color: var(--divider-color, #ddd);
 
