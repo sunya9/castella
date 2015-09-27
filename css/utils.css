@@ -26,3 +26,6 @@
 .round{
   border-radius: var(--default-round-length);
 }
+.large{
+  font-size: var(--default-large-font-size);
+}
