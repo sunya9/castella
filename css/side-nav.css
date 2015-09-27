@@ -8,7 +8,7 @@
       padding: var(--default-side-nav-vertical-padding) 0;
     }
     ul{
-      margin-left: 1rem;
+      margin:0 0 0 1rem;
       list-style-type: none;
     }
   }
