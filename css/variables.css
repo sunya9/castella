@@ -23,6 +23,7 @@
   --default-label-bg-color: var(--label-bg-color, #666);
 
   --default-radius-length: var(--radius-length, 3px);
+  --default-round-length: 1000px;
 }
 
 @custom-media --small;
