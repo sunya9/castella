@@ -9,6 +9,7 @@ import each from 'postcss-each'
 import cssMqpacker from 'css-mqpacker';
 import gulp from 'gulp';
 import gulpLoadPlugins from 'gulp-load-plugins';
+import csswring from 'csswring';
 
 var pkg =  require('./package.json');
 var $ = gulpLoadPlugins();
@@ -33,6 +34,13 @@ gulp.task('css', () => {
         simpleVars,
         cssMqpacker,
       ]
+    }))
+    .pipe(gulp.dest(CSS_DIST_DIR))
+    .pipe($.postcss([
+      csswring
+    ]))
+    .pipe($.rename({
+      extname: '.min.css'
     }))
     .pipe(gulp.dest(CSS_DIST_DIR))
     .pipe($.livereload());
