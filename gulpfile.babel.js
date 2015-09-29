@@ -36,14 +36,14 @@ gulp.task('css', () => {
       ]
     }))
     .pipe(gulp.dest(CSS_DIST_DIR))
+    .pipe($.livereload())
     .pipe($.postcss([
       csswring
     ]))
     .pipe($.rename({
       extname: '.min.css'
     }))
-    .pipe(gulp.dest(CSS_DIST_DIR))
-    .pipe($.livereload());
+    .pipe(gulp.dest(CSS_DIST_DIR));
 });
 
 gulp.task('watch', () => {
