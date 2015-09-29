@@ -5,6 +5,12 @@
   justify-content: flex-start;
   margin: 0 0 1rem;
   border-radius: 0;
+  &.center{
+    justify-content: center;
+  }
+  &.right{
+    justify-content: flex-end;
+  }
   &.full, &.stack{
     > li{
       flex-grow: 1;
