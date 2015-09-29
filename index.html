@@ -140,7 +140,7 @@
               </ul>
             </div>
             <div class="s12 m4">
-              <ol>
+              <ol start="100">
                 <li>Item1</li>
                 <li>Item2</li>
                 <li>Item3</li>
@@ -154,11 +154,46 @@
             <li><span class="label radius">Item2</span></li>
             <li><span class="label round">Item3</span></li>
           </ul>
-          <ul class="button-group radius">
-            <li><a href="#" class="button">Button1</a></li>
+          <ul id="dropdown1" class="dropdown">
+            <li><a href="">Item1</a></li>
+            <li><a href="">Item2</a></li>
+            <li><a href="">Item3</a></li>
+          </ul>
+          <ul class="button-group right radius">
+            <li><a href="#" class="button" data-dropdown="dropdown1">Button1</a></li>
+            <li><a href="#" class="button">Button2</a></li>
+          </ul>
+          <ul class="button-group radius large full">
+            <li><a href="#" class="button" data-dropdown="dropdown1">Button1</a></li>
             <li><a href="#" class="button">Button2</a></li>
             <li><a href="#" class="button">Button3</a></li>
           </ul>
+          <div class="button-bar center">
+            <ul class="button-group radius">
+              <li><a href="#" class="button">Button1 <span class="label round">10</span></a></li>
+              <li><a href="#" class="button">Button2</a></li>
+            </ul>
+            <ul class="button-group radius">
+              <li><a href="#" class="button">Button1</a></li>
+              <li><a href="#" class="button">Button2</a></li>
+            </ul>
+          </div>
+          <div class="row">
+            <div class="s12 m6">
+              <ul class="button-group radius stack">
+                <li><a href="#" class="button">Button1</a></li>
+                <li><a href="#" class="button">Button2</a></li>
+                <li><a href="#" class="button">Button3</a></li>
+              </ul>
+            </div>
+            <div class="s12 m6">
+              <ul class="button-group round stack">
+                <li><a href="#" class="button">Button1</a></li>
+                <li><a href="#" class="button">Button2</a></li>
+                <li><a href="#" class="button">Button3</a></li>
+              </ul>
+            </div>
+          </div>
           <ul class="pagination-centered">
             <li class="disabled"><a href="">Prev</a></li>
             <li class="current"><a href="">1</a></li>
