@@ -1,8 +1,19 @@
 .button-group{
-  @extend .clearfix;
+  display: flex;
+  flex-flow: row nowrap;
   list-style-type: none;
+  justify-content: flex-start;
   margin: 0 0 1rem;
   border-radius: 0;
+  &.full{
+    > li{
+      flex-grow: 1;
+      > :--button{
+        width: 100%;
+        box-sizing: border-box;
+      }
+    }
+  }
   &.radius{
     > li{
       &:first-child :--button{
@@ -24,7 +35,6 @@
     }
   }
   > li{
-    float: left;
     + li > :--button{
       border-left: none
     }
