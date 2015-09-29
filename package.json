@@ -21,6 +21,7 @@
     "babel": "^5.8.23",
     "babel-core": "^5.8.24",
     "babelify": "^6.3.0",
+    "browserify": "^11.2.0",
     "css-mqpacker": "^4.0.0",
     "csswring": "^4.0.0",
     "gulp": "^3.9.0",
@@ -30,6 +31,7 @@
     "gulp-load-plugins": "^0.10.0",
     "gulp-postcss": "^6.0.0",
     "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.4.1",
     "normalize.css": "^3.0.3",
     "postcss-each": "^0.7.0",
     "postcss-extend": "^1.0.0",
@@ -37,7 +39,9 @@
     "postcss-mixins": "^1.0.0",
     "postcss-nested": "^1.0.0",
     "postcss-sass-extend": "0.0.1",
-    "postcss-simple-vars": "^1.0.1"
+    "postcss-simple-vars": "^1.0.1",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
   },
   "dependencies": {}
 }
