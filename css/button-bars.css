@@ -1,8 +1,8 @@
 .button-bar{
-  @extend .clearfix;
   margin-left: -1rem;
+  display: flex;
+  flex-flow: row wrap;
   > .button-group{
-    float: left;
     margin-left: 1rem;
   }
 }
