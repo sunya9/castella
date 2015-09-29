@@ -20,6 +20,7 @@
 @import "utils.css";
 @import "button-groups.css";
 @import "button-bars.css";
+@import "dropdowns.css";
 
 html{
   font-size: var(--default-font-size);
