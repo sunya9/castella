@@ -19,6 +19,7 @@
 @import "labels.css";
 @import "utils.css";
 @import "button-groups.css";
+@import "button-bars.css";
 
 html{
   font-size: var(--default-font-size);
