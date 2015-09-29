@@ -5,12 +5,53 @@
   justify-content: flex-start;
   margin: 0 0 1rem;
   border-radius: 0;
-  &.full{
+  &.full, &.stack{
     > li{
       flex-grow: 1;
       > :--button{
         width: 100%;
         box-sizing: border-box;
+      }
+    }
+  }
+  &.stack{
+    flex-direction: column;
+    > li{
+      :--button{
+        margin: 0;
+      }
+      &:not(:last-child) :--button{
+        padding-bottom: 8px;
+        border-bottom-width: 1px;
+      }
+      + li > :--button{
+        border-top: none;
+      }
+      &:first-child :--button{
+        border-radius: var(--default-button-radius-length) var(--default-button-radius-length) 0 0;
+      }
+      &:last-child :--button{
+          border-radius: 0 0 var(--default-button-radius-length) var(--default-button-radius-length);
+        }
+    }
+    &.radius{
+      > li{
+        &:first-child :--button{
+          border-radius: var(--default-radius-length) var(--default-radius-length) 0 0;
+        }
+        &:last-child :--button{
+          border-radius: 0 0 var(--default-radius-length) var(--default-radius-length);
+        }
+      }
+    }
+    &.round{
+      > li{
+        &:first-child :--button{
+          border-radius: var(--default-round-length) var(--default-round-length) 0 0;
+        }
+        &:last-child :--button{
+          border-radius: 0  0 var(--default-round-length) var(--default-round-length);
+        }
       }
     }
   }
@@ -28,13 +69,19 @@
     > li{
       &:first-child :--button{
           border-radius: var(--default-round-length) 0 0 var(--default-round-length);
+          .stack&{
+            border-radius: 20px 20px 0 0;
+          }
       }
       &:last-child :--button{
         border-radius: 0 var(--default-round-length) var(--default-round-length) 0;
+        .stack&{
+            border-radius: 0 0 20px 20px;
+          }
       }
     }
   }
-  > li{
+  &:not(.stack) > li{
     + li > :--button{
       border-left: none
     }
