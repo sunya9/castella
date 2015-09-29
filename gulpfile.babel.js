@@ -14,7 +14,7 @@ import csswring from 'csswring';
 var pkg =  require('./package.json');
 var $ = gulpLoadPlugins();
 
-const CSS_SRC_DIR = './css/';
+const CSS_SRC_DIR = './src/css/';
 
 const DIST_DIR = './dist/';
 const CSS_DIST_DIR = path.join(DIST_DIR, 'css/');
