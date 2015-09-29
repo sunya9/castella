@@ -1,8 +1,17 @@
 .label{
   display: inline-block;
-  padding: .1rem .6rem;
+  padding: .1rem .6rem .3rem;
   font-size: .8em;
   color: #fff;
   border-radius: 1px;
   background-color: var(--default-label-bg-color);
+  :--button &{
+    position: relative;
+    top: -1px;
+    padding-left: .4rem;
+    padding-right: .4rem;
+    text-align: center;
+    margin-bottom: -.3rem;
+    padding: 0 .3rem .1rem;
+  }
 }
