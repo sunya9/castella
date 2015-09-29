@@ -10,13 +10,11 @@
   cursor: pointer;
   background: transparent none;
   line-height: 1.5;
-  border-radius : 1px;
+  border-radius : var(--default-button-radius-length);
   text-decoration: none;
   color: var(--default-accent-color);
   outline: none;
   border-bottom-width: 3px;
-  position: relative;
-  top: 0;
   &:hover{
     background-color: var(--default-accent-color);
     color: #fff;
@@ -24,9 +22,6 @@
     &:active{
       background-color: color(var(--default-accent-color) b(50%));
       border-color: color(var(--default-accent-color) b(50%));
-      position: relative;
-      border-top-width: 3px;
-      border-bottom-width: 1px;
     }
   }
   &:focus{
