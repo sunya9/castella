@@ -45,8 +45,12 @@
   form{
     display: inline-block;
   }
-  .button, button, input{
+  :--form-control{
     margin: 0;
+  }
+  :--button{
+    padding-top: 7px;
+    padding-bottom: 5px
   }
   .logo{
     font-weight: bold;
@@ -62,12 +66,12 @@
       }
     }
   }
-  ul{
+  ul:not(.dropdown){
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: inline-block;
-    li{
+    > li{
       display: inline-block;
       margin: 0;
       vertical-align: middle;
@@ -75,32 +79,16 @@
       @media (--medium){
         margin: 0 calc(var(--default-column-gutter) / 2);
       }
-      &.dropdown{
-        a{
-          padding-right: 1rem;
-          position: relative;
-          &:after{
-            content: '';
-            width: 0;
-            height: 0;
-            border: .3rem solid transparent;
-            border-top-color: var(--default-accent-color);
-            position: absolute;
-            right: .25rem;
-            top: 50%;
-          }
-        }
-        > ul{
-          display: none;
-        }
-      }
-      a{
+      > a{
         display: block;
         text-decoration: none;
         color: var(--default-accent-color);
         padding: var(--default-global-nav-vertical-padding) calc(var(--default-column-gutter) * .5);
         @media (--medium){
           padding: var(--default-global-nav-vertical-padding) .5rem;
+        }
+        &[data-dropdown]{
+          @extend %dropdownbutton;
         }
         &.dark{
           color: #fff;
