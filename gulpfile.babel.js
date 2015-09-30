@@ -32,10 +32,10 @@ gulp.task('css', () => {
       compress: process.env.NODE_ENV === 'production',
       plugins: [
         each,
+        nested,
         mixins,
         extend2,
         extend,
-        nested,
         repeat,
         simpleVars,
         cssMqpacker,
