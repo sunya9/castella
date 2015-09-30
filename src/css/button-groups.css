@@ -89,7 +89,7 @@
   }
   &:not(.stack) > li{
     + li > :--button{
-      border-left: none
+      border-left: none;
     }
     > :--button{
       margin: 0;
