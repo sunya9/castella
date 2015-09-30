@@ -20,9 +20,9 @@ p{
   &:hover{
     text-decoration: underline;
     color: color(var(--default-accent-color) l(+15%));
-    &:active{
-      color: color(var(--default-accent-color) l(-5%));
-    }
+  }
+  &:active{
+    color: color(var(--default-accent-color) l(-5%));
   }
 }
 dl{
