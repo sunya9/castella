@@ -1,11 +1,12 @@
 import globalNav from './global-nav';
 import dropdowns from './dropdowns';
-
+import tabs from './tabs';
 class Castella{
   constructor(){
     var components = {
       globalNav,
-      dropdowns
+      dropdowns,
+      tabs
     };
     this.components = {};
     Object.keys(components).forEach((name) => {
