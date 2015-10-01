@@ -21,6 +21,7 @@
 @import "button-groups.css";
 @import "button-bars.css";
 @import "dropdowns.css";
+@import "tabs.css";
 
 html{
   font-size: var(--default-font-size);

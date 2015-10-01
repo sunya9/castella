@@ -1,0 +1,53 @@
+.tabs{
+  list-style-type: none;
+  display: flex;
+  margin: 0 0 1rem;
+  flex-flow: row wrap;
+  &:after{
+    content: '';
+    background-color: var(--default-accent-color);
+    flex-grow: 1;
+    height: 1px;
+    align-self: flex-end;
+  }
+  > li{
+    &.disable{
+      padding: .5rem 1rem;
+    }
+    &:first-child a{
+      border-radius: 1px 0 0 0;
+    }
+    &:last-child a{
+      border-radius: 0 1px 0 0;
+    }
+    &[data-active] a{
+      border-bottom: none;
+      padding-bottom: 7px;
+      pointer-events: none;
+    }
+    + li > a{
+      border-left: none;
+    }
+    > a{
+      @extend %button;
+      display: block;
+      margin-bottom: 0;
+      border-bottom-width: 1px;
+      border-radius: 0;
+      &[data-dropdown]{
+        @extend %dropdownbutton;
+      }
+      &:hover{
+        text-decoration: none;
+      }
+    }
+  }
+}
+.tab-contents{
+  > .tab-content{
+    display: none;
+    &.active{
+      display: block;
+    }
+  }
+}
