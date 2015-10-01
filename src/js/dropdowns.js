@@ -22,11 +22,11 @@ function outside(){
 function toggle(e){
   e.stopPropagation();
   e.preventDefault();
+  this.blur();
   var id = this.getAttribute('data-dropdown');
   var target = d.getElementById(id);
   var isFull = this.getAttribute('data-dropdown-full') !== null;
   var offset = this.parentNode.previousElementSibling === null ? 1 : 0;
-  console.log('this.parentNode.previousElementSibling:', this.parentNode.previousElementSibling, (this.offsetLeft + this.offsetWidth - target.offsetWidth + 1));
   if(target){
     target.style.display = target.style.display === 'inline-block' ? 'none' : 'inline-block';
     target.style.minWidth = isFull ? (this.offsetWidth - 1  - offset) + 'px' : 'auto';
