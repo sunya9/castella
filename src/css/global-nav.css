@@ -1,17 +1,14 @@
 .global-nav{
-  /*@extend .row;*/
-  display: flex;
-  max-width: var(--default-row-max-width);
-  padding: 0 var(--default-column-gutter);
-  margin: 0 auto;
+  background-color: #fff;
+  margin-bottom: 4rem;
   &.sticky{
     position: fixed;
     width: 100%;
-    box-shadow: 0 1px 2px #ccc;
-    background-color: #fefefe;
-    + .header{
+    box-sizing: border-box;
+    margin: 0 auto;
+    + *{
       @media (--medium){
-        padding-top: 7rem;
+        padding-top: 5rem;
       }
     }
   }
@@ -22,8 +19,20 @@
   .primary{
     
   }
+  &.shadow{
+    background: linear-gradient(to bottom, #0005, #0000);
+    a{
+      color: #fff;
+    }
+    padding-bottom: 2rem;
+  }
+  > .row{
+    min-height: 4rem;
+    justify-content: space-between;
+  }
   .nav-left, .nav-right{
     margin: auto 0;
+    padding: 0 var(--default-column-gutter);
     @media (--small){
       display: none;
       &.primary{
@@ -66,32 +75,38 @@
       }
     }
   }
-  ul:not(.dropdown){
+  [class*="nav-"]{
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-    > li{
-      display: inline-block;
+    ul:not(.dropdown){
+      list-style-type: none;
       margin: 0;
-      vertical-align: middle;
       padding: 0;
-      @media (--medium){
-        margin: 0 calc(var(--default-column-gutter) / 2);
-      }
-      > a{
-        display: block;
-        text-decoration: none;
-        color: var(--default-accent-color);
-        padding: var(--default-global-nav-vertical-padding) calc(var(--default-column-gutter) * .5);
+      display: inline-block;
+      > li{
+        display: inline-block;
+        margin: 0;
+        vertical-align: middle;
+        padding: 0;
         @media (--medium){
-          padding: var(--default-global-nav-vertical-padding) .5rem;
+          margin: 0 calc(var(--default-column-gutter) / 2);
         }
-        &[data-dropdown]{
-          @extend %dropdownbutton;
-        }
-        &.dark{
-          color: #fff;
+        > a{
+          display: block;
+          text-decoration: none;
+          padding: var(--default-global-nav-vertical-padding) calc(var(--default-column-gutter) * .5);
+          &:active{
+            background-color: #ccc7;
+            box-shadow: 0 0 1px #ccc7;
+          }
+          @media (--medium){
+            padding: calc(var(--default-global-nav-vertical-padding) / 2) .5rem;
+          }
+          &[data-dropdown]{
+            @extend %dropdownbutton;
+          }
+          &.dark{
+            color: #fff;
+          }
         }
       }
     }

@@ -1,6 +1,6 @@
 .header{
   margin: 0 auto 2rem;
-  padding: 2rem 1rem;
+  padding: 1rem 2rem;
   box-shadow: inset 0 2px 1px #000;
   &.stripe{
     background-color: var(--default-stripe-color);
@@ -14,7 +14,7 @@
     
   }
   @media (--medium){
-    padding: 2.5rem 0 4rem;
+    padding: 0 0 4rem;
   }
   @media (--large){
     .title{
