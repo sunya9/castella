@@ -17,6 +17,7 @@ p{
 :--any-link{
   text-decoration: none;
   color: var(--default-accent-color);
+  transition: all .2s ease;
   &:hover{
     text-decoration: underline;
     color: color(var(--default-accent-color) l(+15%));
