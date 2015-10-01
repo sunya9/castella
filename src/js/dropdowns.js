@@ -1,4 +1,4 @@
-import {forEach} from './utils';
+import {forEach, px} from './utils';
 
 var d = document;
 
@@ -29,9 +29,9 @@ function toggle(e){
   var offset = this.parentNode.previousElementSibling === null ? 1 : 0;
   if(target){
     target.style.display = target.style.display === 'inline-block' ? 'none' : 'inline-block';
-    target.style.minWidth = isFull ? (this.offsetWidth - 1  - offset) + 'px' : 'auto';
-    target.style.top = (this.offsetTop + this.offsetHeight - 1) + 'px';
-    target.style.left = (this.offsetLeft + this.offsetWidth - target.offsetWidth) + 'px';
+    target.style.minWidth = isFull ? px(this.offsetWidth - 1  - offset) : 'auto';
+    target.style.top = px(this.offsetTop + this.offsetHeight - 1);
+    target.style.left = px(this.offsetLeft + this.offsetWidth - target.offsetWidth);
     }
   return false;
 }
