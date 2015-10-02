@@ -37,4 +37,5 @@
 @custom-selector :--form-control input, textarea, select, button;
 @custom-selector :--any-link a, a:link, a:visited;
 @custom-selector :--button .button, button;
+@custom-selector :--tab-button .tabs > li > a;
 @custom-selector :--list ul, ol;
