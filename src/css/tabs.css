@@ -11,21 +11,48 @@
     align-self: flex-end;
   }
   > li{
-    &.disable{
-      padding: .5rem 1rem;
+    &[data-disabled]{
+      @extend %button;
+      color: var(--default-secondary-text-color);
+      border-bottom-width: 1px;
+      border-radius: 0;
+      margin-bottom: 0;
+      cursor: not-allowed;
+      &:hover{
+        background: transparent;
+        color: inherit;
+        text-shadow: none;
+      }
     }
-    &:first-child a{
+    &:first-child > a{
       border-radius: 1px 0 0 0;
     }
-    &:last-child a{
+    &:last-child > a{
       border-radius: 0 1px 0 0;
     }
-    &[data-active] a{
-      border-bottom: none;
-      padding-bottom: 7px;
-      pointer-events: none;
+    &[data-active]{
+      position: relative;
+      &:before, &:after{
+        position: absolute;
+        content: '';
+        width: 1px;
+        height: 1px;
+        background-color: var(--default-accent-color);
+        bottom: 0;
+      }
+      &:before{
+        left: -1px;
+        content: none;
+      }
+      &:after{
+        right: 0;
+      }
+      > a{
+        border-bottom-color: transparent;
+        pointer-events: none;
+      }
     }
-    + li > a{
+    + li > a, + li[data-disabled]{
       border-left: none;
     }
     > a{
