@@ -103,6 +103,9 @@
           }
           &[data-dropdown]{
             @extend %dropdownbutton;
+            &:hover:after{
+              border-top-color: var(--default-accent-color);
+            }
           }
           &.dark{
             color: #fff;
