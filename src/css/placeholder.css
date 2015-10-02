@@ -51,10 +51,7 @@
     border: .3em solid transparent;
     border-top-color: var(--default-accent-color);
   }
-  &:not(--button):hover:after{
-    border-top-color: var(--default-accent-color);
-  }
-  &:--button:hover:after{
+  &:hover:after{
     border-top-color: #fff;
   }
 }
