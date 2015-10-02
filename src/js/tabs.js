@@ -16,12 +16,14 @@ export default class Tabs{
 function change(event){
   event.preventDefault();
   this.blur();
+  if(this.parentNode.getAttribute('data-disabled') !== null) return;
   var target = this.hash.substring(1);
   var lists = this.parentNode.parentNode.children;
   forEach(lists, list =>{
     list.removeAttribute('data-active');
   });
   var targetEle = document.getElementById(target);
+  if(!targetEle) return;
   var tabContents = targetEle.parentNode.children;
   forEach(tabContents, tabContent => {
     tabContent.style.display = 'none';
