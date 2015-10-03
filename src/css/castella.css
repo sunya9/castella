@@ -22,6 +22,7 @@
 @import "button-bars.css";
 @import "dropdowns.css";
 @import "tabs.css";
+@import "modal.css";
 
 html{
   font-size: var(--default-font-size);
