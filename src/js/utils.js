@@ -9,3 +9,9 @@ export function $(selector){
 export function px(value){
   return value + 'px';
 }
+
+export function createElement(type, id){
+  var e = document.createElement(type);
+  e.id = id;
+  return e;
+}
