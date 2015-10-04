@@ -1,4 +1,4 @@
-import {forEach, px} from './utils';
+import {$, forEach, px} from './utils';
 
 var d = document;
 
@@ -8,14 +8,14 @@ export default class Dropdowns{
   }
 
   reload(){
-    var dropdownLinks = d.querySelectorAll('[data-dropdown]');
+    var dropdownLinks = $('[data-dropdown]');
     forEach(dropdownLinks, link => link.addEventListener('click', toggle));
     d.body.addEventListener('click', outside);
   }
 }
 
 function outside(){
-  var dropdowns = d.querySelectorAll('.dropdown');
+  var dropdowns = $('.dropdown');
   forEach(dropdowns, dropdown => dropdown.style.display = 'none');
 }
 
