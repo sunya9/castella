@@ -10,8 +10,28 @@ export function px(value){
   return value + 'px';
 }
 
-export function createElement(type, id){
+export function createElement(type, className){
   var e = document.createElement(type);
-  e.id = id;
+  e.className = className;
   return e;
+}
+
+export function removeClass(element, className){
+  if(!element) return;
+  if(!className){
+    element.className = '';
+    return;
+  }
+  if(typeof className === 'string')
+    className = className.split(' ');
+   element.className = element.className.split(' ').filter(name => {
+    return className.indexOf(name) == -1;
+  }).join(' ');
+}
+
+export function addClass(element, className){
+  if(!element || !className) return;
+  if(typeof className === 'string')
+    className = className.split(' ');
+  element.className = element.className.split(' ').concat(className).join(' ');
 }
