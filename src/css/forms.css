@@ -7,6 +7,10 @@ input, label{
   }
 }
 
+:--text-input{
+  color: var(--default-text-color);
+}
+
 :--text-input, select{
   box-sizing: border-box;
   display: block;
