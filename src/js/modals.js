@@ -1,4 +1,4 @@
-import {$, forEach, createElement, px} from './utils';
+import {$, forEach, createElement, px, removeClass, addClass} from './utils';
 
 var d = document;
 
@@ -8,8 +8,8 @@ export default class Modals{
   }
 
   reload(){
-    var bg = d.getElementById('modal-bg');
-    if(bg === null){
+    var bg = $('.modal-bg')[0];
+    if(!bg){
       bg = createElement('div', 'modal-bg');
       bg.addEventListener('click', outside);
       document.body.appendChild(bg);
@@ -25,9 +25,12 @@ export default class Modals{
 function closeModal(e){
   e.stopPropagation();
   e.preventDefault();
-  var opnedModal = $('.modal');
-  forEach(opnedModal, modal => modal.style.display = 'none');
-  d.getElementById('modal-bg').style.display = 'none';
+  var openedModal = $('.modal');
+  forEach(openedModal, modal =>{
+    removeClass(modal, 'slideIn');
+  });
+  var bg = $('.modal-bg')[0];
+  removeClass(bg, 'fadeIn');
   return false;
 }
 
@@ -41,10 +44,12 @@ function openModal(e){
   this.blur();
   var target = d.getElementById(this.hash.substring(1));
   if(target){
-    d.getElementById('modal-bg').style.display = 'block';
     d.body.appendChild(target);
-    target.style.display = 'block';
+    addClass($('.modal-bg')[0], 'fadeIn');
+    setTimeout(() =>{
+      addClass($('.modal-bg')[0], '');
+      addClass(target, 'slideIn');
+    }, 0);
     target.style.top = px(document.body.scrollTop);
-    target.style.left = px((window.innerWidth - target.offsetWidth) / 2);
   }
 }
