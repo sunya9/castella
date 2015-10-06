@@ -1,0 +1,13 @@
+.progressbar{
+  background-color: #fff;
+  height: 1rem;
+  margin: 0 0 1rem;
+  border-radius: 1px;
+  border: 1px solid var(--default-accent-color);
+  .bar{
+    width: 0;
+    background: var(--default-accent-color);
+    height: 100%;
+    display: block;
+  }
+}
