@@ -24,6 +24,7 @@
 @import "tabs.css";
 @import "modals.css";
 @import "progressbars.css";
+@import "notice.css";
 
 html{
   font-size: var(--default-font-size);

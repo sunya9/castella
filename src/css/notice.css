@@ -1,0 +1,7 @@
+.notice{
+  border: 1px solid var(--default-accent-color);
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: color(var(--default-accent-color) a(20%));
+  border-radius: 1px;
+}
