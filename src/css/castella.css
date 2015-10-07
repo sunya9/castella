@@ -35,3 +35,9 @@ body{
   font-family: var(--default-font-family);
   line-height: 1.6;
 }
+
+hr{
+  border: none;
+  border-top: 1px solid var(--default-divider-color);
+  margin: 1rem 0;
+}
