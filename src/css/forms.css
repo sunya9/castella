@@ -86,9 +86,6 @@ select{
 
 .rich-file-button{
   @extend %button;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
   &:after{
     content: attr(data-path);
     overflow: hidden;
