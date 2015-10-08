@@ -6,21 +6,12 @@ export default class Files{
   }
 
   reload(){
-    var files = $('.rich-file-button');
-    forEach(files, fileWrapper =>{
-      // file.addEventListener('click', openFileDialog);
-      var file = fileWrapper.querySelector('input[type="file"]');
-      console.log('file:', file);
+    var richFileButton = $('.rich-file-button');
+    forEach(richFileButton, button =>{
+      var file = button.querySelector('input[type="file"]');
       file.addEventListener('change', change);
     });
   }
-}
-
-function openFileDialog(){
-  console.log('open');
-  var file = this.querySelector('input[type="file"]');
-  console.log('file:', file);
-  file.addEventListener('onchange', change);
 }
 
 function change(e){
