@@ -2,6 +2,7 @@ import globalNav from './global-nav';
 import dropdowns from './dropdowns';
 import tabs from './tabs';
 import modals from './modals';
+import files from './files';
 
 class Castella{
   constructor(){
@@ -10,6 +11,7 @@ class Castella{
       dropdowns,
       tabs,
       modals,
+      files
     };
     this.components = {};
     Object.keys(components).forEach((name) => {
