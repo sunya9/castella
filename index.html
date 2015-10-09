@@ -57,10 +57,6 @@
         <main>
           <h1>What is Castella? <small>カステラとは？</small></h1>
           <p>Castella is new CSS framework that has used many CSS3 properies and selector.</p>
-          <blockquote>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, blanditiis fugiat exercitationem cupiditate illum suscipit quaerat voluptate commodi delectus nemo voluptatum culpa, porro qui rem vitae, nostrum officia enim dolorum.</p>
-            <cite>Lorem ipsum</cite>
-          </blockquote>
           <dl>
             <dt>Lorem Ipsum</dt>
             <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit harum autem quidem vitae tempore eos labore, repudiandae, dolor voluptatem atque cum qui voluptates iusto nulla iste quisquam. Sint, ea, distinctio?</dd>
@@ -72,8 +68,8 @@
           </div>
           <a href="" class="button round">Round button</a>
           <a href="" class="button radius">Round button</a>
-          <ul class="tabs">
-            <li data-active><a href="#tab1">Tab1</a></li>
+          <ul class="tabs full">
+            <li data-active><a href="#tab1">Typography</a></li>
             <li data-disabled>Tab2</li>
             <li>
               <a href="#tab3" data-dropdown="tab3-dropdown">Tab3</a>
@@ -83,14 +79,105 @@
                 <li><a href="#">Item3</a></li>
               </ul>
             </li>
-            <li><a href="#tab4">Tab4</a></li>
+            <li><a href="#tab4">Table</a></li>
+            <li><a href="#tab5">Buttons</a></li>
           </ul>
           <div class="tab-contents">
-            <div class="tab-content active" id="tab1"><p>Tab contents1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam pariatur quas odit aut doloremque nesciunt excepturi, ipsa eum facilis obcaecati cum, dolores alias corporis assumenda sequi, nisi commodi neque ex?</p></div>
+            <div class="tab-content active" id="tab1">
+              <blockquote>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, blanditiis fugiat exercitationem cupiditate illum suscipit quaerat voluptate commodi delectus nemo voluptatum culpa, porro qui rem vitae, nostrum officia enim dolorum.</p>
+                <cite>Lorem ipsum</cite>
+              </blockquote>
+            </div>
             <div class="tab-content" id="tab2"><p>Tab contents2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam pariatur quas odit aut doloremque nesciunt excepturi, ipsa eum facilis obcaecati cum, dolores alias corporis assumenda sequi, nisi commodi neque ex?</p></div>
             <div class="tab-content" id="tab3"><p>Tab contents3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam pariatur quas odit aut doloremque nesciunt excepturi, ipsa eum facilis obcaecati cum, dolores alias corporis assumenda sequi, nisi commodi neque ex?</p></div>
-            <div class="tab-content" id="tab4"><p>Tab contents4. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam pariatur quas odit aut doloremque nesciunt excepturi, ipsa eum facilis obcaecati cum, dolores alias corporis assumenda sequi, nisi commodi neque ex?</p></div>
+            <div class="tab-content" id="tab4">
+              <h2>Table</h2>
+              <div class="responsive-table">
+                <table class="full stripe">
+                  <thead>
+                    <tr>
+                      <th>Column1</th>
+                      <th>Column2</th>
+                      <th>Column3</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Item</td>
+                      <td>Item</td>
+                      <td>Item</td>
+                    </tr>
+                    <tr>
+                      <td>Item</td>
+                      <td>Item</td>
+                      <td>Item</td>
+                    </tr>
+                    <tr>
+                      <td>Item</td>
+                      <td>Item</td>
+                      <td>Item</td>
+                    </tr>
+                    <tfoot>
+                      <tr>
+                        <td>footer1</td>
+                        <td>footer2</td>
+                        <td>footer3</td>
+                      </tr>
+                    </tfoot>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="tab-content" id="tab5">
+              <ul id="dropdown1" class="dropdown">
+                <li><a href="">Item1</a></li>
+                <li><a href="">Item2</a></li>
+                <li><a href="">Item3</a></li>
+              </ul>
+              <ul class="button-group right radius">
+                <li><a href="#" class="button" data-dropdown="dropdown1" data-dropdown-full>Button1</a></li>
+                <li><a href="#" class="button" data-dropdown="dropdown1" data-dropdown-full>Button2</a></li>
+                <li><a href="#" class="button" data-dropdown="dropdown1" data-dropdown-full>Button3</a></li>
+              </ul>
+              <ul class="button-group radius large full">
+                <li><a href="#" class="button" data-dropdown="dropdown1" data-dropdown-full>Button1</a></li>
+                <li><a href="#" class="button active">Button2</a></li>
+                <li><button href="#" class="button" data-dropdown="dropdown1">Button3</button></li>
+              </ul>
+              <div class="button-bar center">
+                <ul class="button-group radius">
+                  <li><a href="#" class="button">Button1 <span class="label round">10</span></a></li>
+                  <li><a href="#" class="button">Button2</a></li>
+                </ul>
+                <ul class="button-group radius">
+                  <li><a href="#" class="button">Button1</a></li>
+                  <li><a href="#" class="button">Button2</a></li>
+                </ul>
+              </div>
+              <div class="row">
+                <div class="s12 m6">
+                  <ul class="button-group radius stack">
+                    <li><a href="#" class="button">Button1</a></li>
+                    <li><a href="#" class="button">Button2</a></li>
+                    <li><a href="#" class="button">Button3</a></li>
+                  </ul>
+                </div>
+                <div class="s12 m6">
+                  <ul class="button-group round stack">
+                    <li><a href="#" class="button">Button1</a></li>
+                    <li><a href="#" class="button">Button2</a></li>
+                    <li><a href="#" class="button">Button3</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
+          <hr />
+          <div class="notice">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel ab, incidunt, numquam sunt aliquid nobis. Explicabo beatae vel iusto quasi, cumque laudantium fugit molestiae quis soluta, unde cupiditate omnis quaerat.
+          </div>
+
           <a href="#modal-example" class="button" data-modal>Open a modal</a>
           <div class="modal" id="modal-example">
             <div class="modal-header"><h1>Modal title</h1></div>
@@ -112,42 +199,6 @@
             <div class="l4 s12">
               <h3>Flexible</h3>
             </div>
-          </div>
-          <h2>Table</h2>
-          <div class="responsive-table">
-            <table class="full stripe">
-              <thead>
-                <tr>
-                  <th>Column1</th>
-                  <th>Column2</th>
-                  <th>Column3</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Item</td>
-                  <td>Item</td>
-                  <td>Item</td>
-                </tr>
-                <tr>
-                  <td>Item</td>
-                  <td>Item</td>
-                  <td>Item</td>
-                </tr>
-                <tr>
-                  <td>Item</td>
-                  <td>Item</td>
-                  <td>Item</td>
-                </tr>
-                <tfoot>
-                  <tr>
-                    <td>footer1</td>
-                    <td>footer2</td>
-                    <td>footer3</td>
-                  </tr>
-                </tfoot>
-              </tbody>
-            </table>
           </div>
           <div class="row">
             <div class="s12 m4">
@@ -187,47 +238,6 @@
             <li><span class="label radius">Item2</span></li>
             <li><span class="label round">Item3</span></li>
           </ul>
-          <ul id="dropdown1" class="dropdown">
-            <li><a href="">Item1</a></li>
-            <li><a href="">Item2</a></li>
-            <li><a href="">Item3</a></li>
-          </ul>
-          <ul class="button-group right radius">
-            <li><a href="#" class="button" data-dropdown="dropdown1" data-dropdown-full>Button1</a></li>
-            <li><a href="#" class="button" data-dropdown="dropdown1" data-dropdown-full>Button2</a></li>
-            <li><a href="#" class="button" data-dropdown="dropdown1" data-dropdown-full>Button3</a></li>
-          </ul>
-          <ul class="button-group radius large full">
-            <li><a href="#" class="button" data-dropdown="dropdown1" data-dropdown-full>Button1</a></li>
-            <li><a href="#" class="button active">Button2</a></li>
-            <li><button href="#" class="button" data-dropdown="dropdown1">Button3</button></li>
-          </ul>
-          <div class="button-bar center">
-            <ul class="button-group radius">
-              <li><a href="#" class="button">Button1 <span class="label round">10</span></a></li>
-              <li><a href="#" class="button">Button2</a></li>
-            </ul>
-            <ul class="button-group radius">
-              <li><a href="#" class="button">Button1</a></li>
-              <li><a href="#" class="button">Button2</a></li>
-            </ul>
-          </div>
-          <div class="row">
-            <div class="s12 m6">
-              <ul class="button-group radius stack">
-                <li><a href="#" class="button">Button1</a></li>
-                <li><a href="#" class="button">Button2</a></li>
-                <li><a href="#" class="button">Button3</a></li>
-              </ul>
-            </div>
-            <div class="s12 m6">
-              <ul class="button-group round stack">
-                <li><a href="#" class="button">Button1</a></li>
-                <li><a href="#" class="button">Button2</a></li>
-                <li><a href="#" class="button">Button3</a></li>
-              </ul>
-            </div>
-          </div>
           <ul class="pagination-centered">
             <li class="disabled"><a href="">Prev</a></li>
             <li class="current"><a href="">1</a></li>
@@ -345,6 +355,10 @@
                     <input type="submit" value="submit" />
                     <button class="large">Large button</button>
                     <input type="button" value="Small button" class="small">
+                    <label class="rich-file-button">
+                      ファイルを選択:
+                      <input type="file" name="" id="" multiple>
+                    </label>
                   </div>
                 </div>
                 <input type="range" name="" id="">
