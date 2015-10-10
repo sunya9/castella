@@ -68,7 +68,7 @@ input[type="radio"], input[type="checkbox"]{
     
   }
 }
-
+n
 select{
   position: relative;
   padding-right: 1rem;
@@ -94,5 +94,36 @@ select{
   }
   input[type="file"]{
     display: none;
+  }
+}
+
+.input-group{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  margin-bottom: 1rem;
+  input, select{
+    margin-bottom: 0;
+  }
+  &.radius{
+    .prefix{
+      border-radius: var(--default-radius-length) 0 0 var(--default-radius-length);
+    }
+    .postfix{
+      border-radius: 0 var(--default-radius-length) var(--default-radius-length) 0;
+    }
+  }
+  .prefix, .postfix{
+    padding: 6px .8rem 7px;
+    border: 1px solid var(--default-divider-color);
+    background-color: #eee;
+  }
+  .prefix{
+    border-right: none;
+  }
+  .postfix{
+    border-left: none;
+  }
+  input, select{
   }
 }
