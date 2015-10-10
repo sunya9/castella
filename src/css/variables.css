@@ -29,7 +29,7 @@
   --default-round-length: 1000px;
 }
 
-@custom-media --small;
+@custom-media --small only screen;
 @custom-media --medium (width >= 40rem);
 @custom-media --large (width >= 70rem);
 
