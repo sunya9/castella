@@ -35,6 +35,7 @@
 
 @custom-selector :--text-input input[type="text"], textarea;
 @custom-selector :--form-control input, textarea, select, button;
+@custom-selector :--state-box input[type="radio"], input[type="checkbox"];
 @custom-selector :--any-link a, a:link, a:visited;
 @custom-selector :--button .button, button;
 @custom-selector :--tab-button .tabs > li > a;
