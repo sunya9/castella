@@ -10,6 +10,24 @@
     height: 1px;
     align-self: flex-end;
   }
+  &.borderless{
+    > li{
+      &[data-disabled]{
+        border: none;
+      }
+      &[data-active]{
+        > a{
+          box-shadow: none;
+        }
+      }
+      > a{
+        border: none;
+      }
+    }
+    &:after{
+      content: none;
+    }
+  }
   &.full{
     justify-content: flex-start;
     > li{
