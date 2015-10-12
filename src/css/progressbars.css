@@ -9,5 +9,10 @@
     background: var(--default-accent-color);
     height: 100%;
     display: block;
+    line-height: 1;
+    text-align: right;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 0 .5rem;
   }
 }
