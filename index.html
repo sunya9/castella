@@ -16,8 +16,10 @@
 
         <div class="nav-right">
           <form action="./">
+          <div class="input-group">
             <input type="text" class="inline" placeholder="search">
             <button>Submit</button>
+          </div>
           </form>
           <ul>
             <li><a href="#">About</a></li>
@@ -64,10 +66,17 @@
             <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit harum autem quidem vitae tempore eos labore, repudiandae, dolor voluptatem atque cum qui voluptates iusto nulla iste quisquam. Sint, ea, distinctio?</dd>
           </dl>
           <div class="progressbar">
-            <span class="bar" style="width: 50%"></span>
+            <span class="bar" style="width: 70%">70%</span>
           </div>
           <a href="" class="button round">Round button</a>
           <a href="" class="button radius">Round button</a>
+          <ul class="tabs borderless full">
+            <li data-active><a href=".">Typography</a></li>
+            <li data-disabled>Tab2</li>
+            <li><a href=".">Tab3</a></li>
+            <li><a href=".">Table</a></li>
+            <li><a href=".">Buttons</a></li>
+          </ul>
           <ul class="tabs full">
             <li data-active><a href="#tab1">Typography</a></li>
             <li data-disabled>Tab2</li>
@@ -118,14 +127,14 @@
                       <td>Item</td>
                       <td>Item</td>
                     </tr>
-                    <tfoot>
-                      <tr>
-                        <td>footer1</td>
-                        <td>footer2</td>
-                        <td>footer3</td>
-                      </tr>
-                    </tfoot>
                   </tbody>
+                  <tfoot>
+                    <tr>
+                      <td>footer1</td>
+                      <td>footer2</td>
+                      <td>footer3</td>
+                    </tr>
+                  </tfoot>
                 </table>
               </div>
             </div>
@@ -175,7 +184,9 @@
           </div>
           <hr />
           <div class="notice">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel ab, incidunt, numquam sunt aliquid nobis. Explicabo beatae vel iusto quasi, cumque laudantium fugit molestiae quis soluta, unde cupiditate omnis quaerat.
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel ab, incidunt, numquam sunt aliquid nobis. Explicabo beatae vel iusto quasi, cumque laudantium fugit molestiae quis soluta, unde cupiditate omnis quaerat.
+            </p>
           </div>
 
           <a href="#modal-example" class="button" data-modal>Open a modal</a>
@@ -274,9 +285,12 @@
             <div class="column s3">s3</div>
           </div>
           <div class="row">
-            <div class="column s4">s4</div>
-            <div class="column s4">s4</div>
-            <div class="column s4">s4</div>
+            <div class="s6 m4 l3 text-center"><img src="http://placehold.it/100x100" alt="" class="round"></div>
+            <div class="s6 m4 l3 text-center"><img src="http://placehold.it/100x100" alt="" class="round"></div>
+            <div class="s6 m4 l3 text-center"><img src="http://placehold.it/100x100" alt="" class="round"></div>
+            <div class="s6 m4 l3 text-center"><img src="http://placehold.it/100x100" alt="" class="round"></div>
+            <div class="s6 m4 l3 text-center"><img src="http://placehold.it/100x100" alt="" class="round"></div>
+            <div class="s6 m4 l3 text-center"><img src="http://placehold.it/100x100" alt="" class="round"></div>
           </div>
           <div class="row">
             <div class="column s6">s6</div>
@@ -298,75 +312,80 @@
             <div class="column s10">s10</div>
             <div class="column s2">s2</div>
           </div>
-          <div class="row">
-            <div class="column s11">
-              <form>
-                <div class="row">
-                  <div class="column s2">
-                    <label for="text">text</label>
-                  </div>
-                  <div class="column s10">
-                    <input type="text" name="text" id="text">
-                  </div>
-                </div>
-                <div class="row collapse">
-                  <div class="column s2">
-                    <label for="text2">日本語</label>
-                  </div>
-                  <div class="column s10">
-                    <input type="text" name="text2" id="text2">
-                    <p class="help-text">日本語で入力してください。</p>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="s2"><label for="">Select</label></div>
-                  <div class="s10"><select name="aaa" id="aaa">
-                      <option value="">Item1</option>
-                      <option value="">Item2</option>
-                      <option value="">Item3</option>
-                    </select></div>
-                </div>
-                <div class="row">
-                  <div class="column s2">
-                    <label>チェックボックス</label>
-                  </div>
-                  <div class="column s10">
-                      <label><input type="checkbox" name="" id="">チェック1</label>
-                      <label><input type="checkbox" name="" id="">チェック2</label>
-                      <label><input type="checkbox" name="" id="">チェック3</label>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="column s2">
-                    <label>ラジオボタン</label>
-                  </div>
-                  <div class="column s10">
-                    <label><input type="radio" name="radio" id="">ラジオ1</label>
-                    <label><input type="radio" name="radio" id="">ラジオ2</label>
-                    <label><input type="radio" name="radio" id="">ラジオ3</label>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="column s2">
-                    <label for="textarea">テキストエリア</label>
-                  </div>
-                  <div class="column s10">
-                    <textarea name="" id="textarea" cols="30" rows="10"></textarea>
-                    <input type="submit" value="submit" />
-                    <button class="large">Large button</button>
-                    <input type="button" value="Small button" class="small">
-                    <label class="rich-file-button">
-                      ファイルを選択:
-                      <input type="file" name="" id="" multiple>
-                    </label>
-                  </div>
-                </div>
-                <input type="range" name="" id="">
-                <input type="file" name="" id="">
-              </form>
+
+          <form>
+            <div class="row">
+              <div class="s2"><label for="">Select</label></div>
+              <div class="s10"><select name="aaa" id="aaa">
+                  <option value="">Item1</option>
+                  <option value="">Item2</option>
+                  <option value="">Item3</option>
+                </select></div>
             </div>
-            <div class="column s1">s1</div>
-          </div>
+            <div class="input-group radius">
+              <div>@</div>
+              <input type="text" name="" id="">
+              <a href="#" class="button" data-dropdown>ハッシュタグ</a>
+            </div>
+            <div class="input-group round">
+              <div>パーマリンク</div>
+              <input type="text" name="" value="http://unsweets.net" id="" readonly>
+            </div>
+            <div class="input-group radius">
+              <input type="button" value="検索">
+              <input type="text" name="" id="" disabled>
+            </div>
+            <div class="input-group radius">
+              <div><input type="checkbox" name="" id=""></div>
+              <select name="" id="">
+                <option value="">Item1</option>
+                <option value="">Item2</option>
+                <option value="">Item3</option>
+                <option value="">Item4</option>
+                <option value="">Item5</option>
+              </select> 
+              <div>
+                <input type="radio" name="" id="">
+              </div>
+            </div>
+            <div class="row">
+              <div class="column s2">
+                <label>チェックボックス</label>
+              </div>
+              <div class="column s10">
+                  <label><input type="checkbox" name="" id="">チェック1</label>
+                  <label><input type="checkbox" name="" id="">チェック2</label>
+                  <label><input type="checkbox" name="" id="">チェック3</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="column s2">
+                <label>ラジオボタン</label>
+              </div>
+              <div class="column s10">
+                <label><input type="radio" name="radio" id="">ラジオ1</label>
+                <label><input type="radio" name="radio" id="">ラジオ2</label>
+                <label><input type="radio" name="radio" id="">ラジオ3</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="column s2">
+                <label for="textarea">テキストエリア</label>
+              </div>
+              <div class="column s10">
+                <textarea name="" id="textarea" cols="30" rows="10"></textarea>
+                <input type="submit" value="submit" />
+                <button class="large">Large button</button>
+                <input type="button" value="Small button" class="small">
+                <label class="rich-file-button">
+                  ファイルを選択:
+                  <input type="file" name="" id="" multiple>
+                </label>
+              </div>
+            </div>
+            <input type="range" name="" id="">
+            <input type="file" name="" id="">
+          </form>
           <div class="row">
             <div class="columns s6">
               <h1>Heading1</h1>
